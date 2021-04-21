@@ -1,0 +1,54 @@
+.heading{
+    font-size: 23px;
+    width: 100%;
+    margin: 0px;
+}
+
+.note{
+    font-size: 15px;
+    color: #000;
+}
+
+body{
+    background-size: cover;
+}
+
+.div_rapidash{
+    float: left;
+}
+
+.divRapidash_img{
+    width: 200px;
+    border-radius: 200px;
+}
+
+#mega_Rapidash{
+    font-size: 23px;
+    margin: 15px;
+}
+
+.div_exploud{
+    float: right; 
+}
+
+.divExploud_img{
+    width: 200px;
+    border-radius: 200px; 
+}
+
+#mega_Exploud{
+    font-size: 23px;
+    margin: 15px;
+}
+
+.dratini_button , .dragonight_button{
+    width: 130px;
+    font-size: 25px;
+    margin-top: 20px;
+}
+
+canvas{
+    border: 5px solid cyan;
+    border-radius: 20px;
+    box-shadow: 5px 5px 38px crimson;
+}
