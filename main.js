@@ -6,9 +6,6 @@ leftWristY=0
 rightWristX=0
 rightWristY=0
 
-scoreLeftWrist=0
-scoreRightWrist=0
-
 function setup(){
     canvas= createCanvas(600 , 500);
     canvas.center();
@@ -49,9 +46,7 @@ function draw(){
     image(video, 0 , 0 , 600 , 500);
     fill("#FF0000");
     stroke("#FF0000");
-
-    if(scoreRightWrist > 0.2){
-        
+       
     circle(rightWristX , rightWristY , 20)
     if (rightWristY > 0 && rightWristY <= 100) {
         song.rate(0.5);
@@ -72,17 +67,14 @@ function draw(){
         song.rate(1);
         document.getElementById("mega_Rapidash").innerHTML = "Speed = 1x";
         }
-    }
-    
-    if(scoreLeftWrist > 0.2){
-        
+          
     circle(leftWristX , leftWristY , 20);
     InNumberleftWristY = Number(leftWristY);
     remove_decimals = floor(InNumberleftWristY);
     volume = remove_decimals/500;
     document.getElementById("mega_Exploud").innerHTML = "Volume = " + volume;
     song.setVolume(volume);
-    }
+    
 }
 
 function preload(){
